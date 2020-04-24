@@ -63,7 +63,7 @@ ChatBot &ChatBot::operator=(const ChatBot &source)
 
     if (this == &source) { return *this; }
 
-    if (_image != nullptr) { delete _image; }
+    if (_image != NULL) { delete _image; }
     _image = new wxBitmap();
     *_image = *source._image;
 
@@ -97,7 +97,7 @@ ChatBot &ChatBot::operator=(ChatBot &&source)
 
     if (this == &source) { return *this; }
 
-    if (_image != nullptr) { delete _image; }
+    if (_image != NULL) { delete _image; }
 
     _image = source._image;
     _currentNode = source._currentNode;
